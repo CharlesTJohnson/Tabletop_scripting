@@ -1,0 +1,731 @@
+--[[ Lua code. See documentation: http://berserk-games.com/knowledgebase/scripting/ --]]
+
+--[[ The onLoad event is called after the game save finishes loading. --]]
+function onLoad()
+    --[[ print('onLoad!') --]]
+    card = getObjectFromGUID("04f6f8")
+    params = {
+        click_function="AttackValue",
+        function_owner=self,
+        label="0",
+        position={-.88, 2, -.73},
+        width=60,
+        height=60,
+        font_color={0, 0, 0},
+        color={1,1,1}
+    }
+    card.createButton(params)
+
+    params = {
+        click_function="DefenseValue",
+        function_owner=self,
+        label="0",
+        position={-.88, 2, -.22},
+        width=60,
+        height=60,
+        font_color={0, 0, 0},
+        color={1,1,1}
+    }
+    card.createButton(params)
+
+    params = {
+        click_function="FirstMasteryValue",
+        function_owner=self,
+        label="0",
+        position={-.88, 2, .29},
+        width=60,
+        height=60,
+        font_color={0, 0, 0},
+        color={1,1,1}
+    }
+    card.createButton(params)
+
+    params = {
+        click_function="SecondMasteryValue",
+        function_owner=self,
+        label="0",
+        position={-.88, 2, .80},
+        width=60,
+        height=60,
+        font_color={0, 0, 0},
+        color={1,1,1}
+    }
+    card.createButton(params)
+
+    params = {
+        click_function="NavigateValue",
+        function_owner=self,
+        label="0",
+        position={-.585, 2, 1.1},
+        width=60,
+        height=60,
+        font_color={0, 0, 0},
+        color={1,1,1}
+    }
+    card.createButton(params)
+
+    params = {
+        click_function="ExploreValue",
+        function_owner=self,
+        label="0",
+        position={-.33, 2, 1.1},
+        width=60,
+        height=60,
+        font_color={0, 0, 0},
+        color={1,1,1}
+    }
+    card.createButton(params)
+
+    params = {
+        click_function="SurvivalValue",
+        function_owner=self,
+        label="0",
+        position={-.07, 2, 1.1},
+        width=60,
+        height=60,
+        font_color={0, 0, 0},
+        color={1,1,1}
+    }
+    card.createButton(params)
+
+    params = {
+        click_function="FoodRatingValue",
+        function_owner=self,
+        label="0",
+        position={.225, 2, 1.275},
+        width=60,
+        height=60,
+        font_color={0, 0, 0},
+        color={1,1,1}
+    }
+    card.createButton(params)
+
+    params = {
+        click_function="FoodValue",
+        function_owner=self,
+        label="0",
+        position={.75, 2, 1.05},
+        width=60,
+        height=60,
+        font_color={0, 0, 0},
+        color={1,1,1}
+    }
+    card.createButton(params)
+
+    params = {
+        click_function="GoldValue",
+        function_owner=self,
+        label="0",
+        position={.91, 2, 1},
+        width=60,
+        height=60,
+        font_color={0, 0, 0},
+        color={1,1,1}
+    }
+    card.createButton(params)
+
+    params = {
+        click_function="PotionLabel",
+        function_owner=self,
+        label="Potion",
+        position={.61, 2, -.22},
+        width=0,
+        height=0,
+        font_color={0, 0, 0},
+        font_size=56,
+        color={1,1,1}
+    }
+    card.createButton(params)
+
+    params = {
+        click_function="PotionValue",
+        function_owner=self,
+        label="0",
+        position={.90, 2, -.22},
+        width=60,
+        height=60,
+        font_color={0,0,0},
+        font_size=60,
+        color={0.909803922, 0.878431373, 0.862745098,1},
+        hideBG = true
+    }
+    card.createButton(params)
+
+    params = {
+        click_function="LStoneLabel",
+        function_owner=self,
+        label="L Stone",
+        position={.63, 2, -.10},
+        width=0,
+        height=0,
+        font_color={0, 0, 0},
+        font_size=56,
+        color={1,1,1}
+    }
+    card.createButton(params)
+
+    params = {
+        click_function="LStoneValue",
+        function_owner=self,
+        label="0",
+        position={.90, 2, -.10},
+        width=60,
+        height=60,
+        font_color={0,0,0},
+        font_size=60,
+        color={0.909803922, 0.878431373, 0.862745098,1},
+        hideBG = true
+    }
+    card.createButton(params)
+
+    params = {
+        click_function="HElixirLabel",
+        function_owner=self,
+        label="H Elixir",
+        position={.63, 2, .02},
+        width=0,
+        height=0,
+        font_color={0, 0, 0},
+        font_size=56,
+        color={1,1,1}
+    }
+    card.createButton(params)
+
+    params = {
+        click_function="HElixirValue",
+        function_owner=self,
+        label="0",
+        position={.90, 2, .02},
+        width=60,
+        height=60,
+        font_color={0,0,0},
+        font_size=60,
+        color={0.909803922, 0.878431373, 0.862745098,1},
+        hideBG = true
+    }
+    card.createButton(params)
+
+    params = {
+        click_function="CampGLabel",
+        function_owner=self,
+        label="Camp G",
+        position={.64, 2, .14},
+        width=0,
+        height=0,
+        font_color={0, 0, 0},
+        font_size=56,
+        color={1,1,1}
+    }
+    card.createButton(params)
+
+    params = {
+        click_function="CampGValue",
+        function_owner=self,
+        label="",
+        position={.90, 2, .14},
+        width=60,
+        height=60,
+        font_color={0,0,0},
+        font_size=60,
+        color={0.909803922, 0.878431373, 0.862745098,1},
+        hideBG = true
+    }
+    card.createButton(params)
+
+    params = {
+        click_function="ClimbGLabel",
+        function_owner=self,
+        label="Climb G",
+        position={.64, 2, .26},
+        width=0,
+        height=0,
+        font_color={0, 0, 0},
+        font_size=56,
+        color={1,1,1}
+    }
+    card.createButton(params)
+
+    params = {
+        click_function="ClimbGValue",
+        function_owner=self,
+        label="",
+        position={.90, 2, .26},
+        width=60,
+        height=60,
+        font_color={0,0,0},
+        font_size=60,
+        color={0.909803922, 0.878431373, 0.862745098,1},
+        hideBG = true
+    }
+    card.createButton(params)
+
+    params = {
+        click_function="FBoatLabel",
+        function_owner=self,
+        label="F Boat",
+        position={.61, 2, .38},
+        width=0,
+        height=0,
+        font_color={0, 0, 0},
+        font_size=56,
+        color={1,1,1}
+    }
+    card.createButton(params)
+
+    params = {
+        click_function="FBoatValue",
+        function_owner=self,
+        label="",
+        position={.90, 2, .38},
+        width=60,
+        height=60,
+        font_color={0,0,0},
+        font_size=60,
+        color={0.909803922, 0.878431373, 0.862745098,1},
+        hideBG = true
+    }
+    card.createButton(params)
+
+    params = {
+        click_function="RMountLabel",
+        function_owner=self,
+        label="RMount",
+        position={.64, 2, .50},
+        width=0,
+        height=0,
+        font_color={0, 0, 0},
+        font_size=56,
+        color={1,1,1}
+    }
+    card.createButton(params)
+
+    params = {
+        click_function="RMountValue",
+        function_owner=self,
+        label="",
+        position={.90, 2, .50},
+        width=60,
+        height=60,
+        font_color={0,0,0},
+        font_size=60,
+        color={0.909803922, 0.878431373, 0.862745098,1},
+        hideBG = true
+    }
+    card.createButton(params)
+
+    params = {
+        click_function="MaxEnergyValue",
+        function_owner=self,
+        label="0",
+        position={.575, 2, -.56},
+        width=60,
+        height=60,
+        font_color={0, 0, 0},
+        color={1,1,1}
+    }
+    card.createButton(params)
+
+    params = {
+        click_function="MaxHealthValue",
+        function_owner=self,
+        label="0",
+        position={.575, 2, -1.05},
+        width=60,
+        height=60,
+        font_color={0, 0, 0},
+        color={1,1,1}
+    }
+    card.createButton(params)
+
+    params = {
+        click_function="CurrentEnergyValue",
+        function_owner=self,
+        label="0",
+        position={.775, 2, -.64},
+        width=60,
+        height=60,
+        font_color={0, 0, 0},
+        color={1,1,1}
+    }
+    card.createButton(params)
+
+    params = {
+        click_function="CurrentHealthValue",
+        function_owner=self,
+        label="0",
+        position={.775, 2, -.95},
+        width=60,
+        height=60,
+        font_color={0, 0, 0},
+        color={1,1,1}
+    }
+    card.createButton(params)
+
+    params = {
+        click_function="EnergyRegenValue",
+        function_owner=self,
+        label="0",
+        position={.91, 2, -.64},
+        width=60,
+        height=60,
+        font_color={0, 0, 0},
+        color={1,1,1}
+    }
+    card.createButton(params)
+
+    params = {
+        click_function="HealthRegenValue",
+        function_owner=self,
+        label="0",
+        position={.91, 2, -.95},
+        width=60,
+        height=60,
+        font_color={0, 0, 0},
+        color={1,1,1}
+    }
+    card.createButton(params)
+
+    params = {
+      input_function="NameValue",
+      function_owner=self,
+      label="Enter Name...",
+      position={-.06, 2, -.81},
+      width=440,
+      height=75,
+      font_color={0,0,0},
+      validation=6,
+      font_size=40,
+      color={.905882, .854902, .839216}
+
+    }
+    card.createInput(params)
+
+    params = {
+      input_function="NameValue",
+      function_owner=self,
+      label="Favored Opponent...",
+      position={-.11, 2, -.62},
+      width=395,
+      height=75,
+      font_color={0,0,0},
+      validation=6,
+      font_size=40,
+      color={.905882, .854902, .839216}
+
+    }
+    card.createInput(params)
+
+end
+
+--[[ The onUpdate event is called once per frame. --]]
+function onUpdate ()
+    --[[ print('onUpdate loop!') --]]
+end
+
+function AttackValue(obj, color, alt_click)
+    if alt_click == false then
+      card = obj.getButtons()
+      current = tonumber(card[1]["label"])
+      new = tostring(current + 1)
+      obj.editButton({index=0, label=new})
+    else
+      card = obj.getButtons()
+      current = tonumber(card[1]["label"])
+      new = tostring(current - 1)
+      obj.editButton({index=0, label=new})
+    end
+end
+
+function DefenseValue(obj, color, alt_click)
+    if alt_click == false then
+      card = obj.getButtons()
+      current = tonumber(card[2]["label"])
+      new = tostring(current + 1)
+      obj.editButton({index=1, label=new})
+    else
+      card = obj.getButtons()
+      current = tonumber(card[2]["label"])
+      new = tostring(current - 1)
+      obj.editButton({index=1, label=new})
+    end
+end
+
+function FirstMasteryValue(obj, color, alt_click)
+    if alt_click == false then
+      card = obj.getButtons()
+      current = tonumber(card[3]["label"])
+      new = tostring(current + 1)
+      obj.editButton({index=2, label=new})
+    else
+      card = obj.getButtons()
+      current = tonumber(card[3]["label"])
+      new = tostring(current - 1)
+      obj.editButton({index=2, label=new})
+    end
+end
+
+function SecondMasteryValue(obj, color, alt_click)
+    if alt_click == false then
+      card = obj.getButtons()
+      current = tonumber(card[4]["label"])
+      new = tostring(current + 1)
+      obj.editButton({index=3, label=new})
+    else
+      card = obj.getButtons()
+      current = tonumber(card[4]["label"])
+      new = tostring(current - 1)
+      obj.editButton({index=3, label=new})
+    end
+end
+
+function NavigateValue(obj, color, alt_click)
+    if alt_click == false then
+      card = obj.getButtons()
+      current = tonumber(card[5]["label"])
+      new = tostring(current + 1)
+      obj.editButton({index=4, label=new})
+    else
+      card = obj.getButtons()
+      current = tonumber(card[5]["label"])
+      new = tostring(current - 1)
+      obj.editButton({index=4, label=new})
+    end
+end
+
+function ExploreValue(obj, color, alt_click)
+    if alt_click == false then
+      card = obj.getButtons()
+      current = tonumber(card[6]["label"])
+      new = tostring(current + 1)
+      obj.editButton({index=5, label=new})
+    else
+      card = obj.getButtons()
+      current = tonumber(card[6]["label"])
+      new = tostring(current - 1)
+      obj.editButton({index=5, label=new})
+    end
+end
+
+function SurvivalValue(obj, color, alt_click)
+    if alt_click == false then
+      card = obj.getButtons()
+      current = tonumber(card[7]["label"])
+      new = tostring(current + 1)
+      obj.editButton({index=6, label=new})
+    else
+      card = obj.getButtons()
+      current = tonumber(card[7]["label"])
+      new = tostring(current - 1)
+      obj.editButton({index=6, label=new})
+    end
+end
+
+function FoodRatingValue(obj, color, alt_click)
+    if alt_click == false then
+      card = obj.getButtons()
+      current = tonumber(card[8]["label"])
+      new = tostring(current + 1)
+      obj.editButton({index=7, label=new})
+    else
+      card = obj.getButtons()
+      current = tonumber(card[8]["label"])
+      new = tostring(current - 1)
+      obj.editButton({index=7, label=new})
+    end
+end
+
+function FoodValue(obj, color, alt_click)
+    if alt_click == false then
+      card = obj.getButtons()
+      current = tonumber(card[9]["label"])
+      new = tostring(current + 1)
+      obj.editButton({index=8, label=new})
+    else
+      card = obj.getButtons()
+      current = tonumber(card[9]["label"])
+      new = tostring(current - 1)
+      obj.editButton({index=8, label=new})
+    end
+end
+
+function GoldValue(obj, color, alt_click)
+    if alt_click == false then
+      card = obj.getButtons()
+      current = tonumber(card[10]["label"])
+      new = tostring(current + 1)
+      obj.editButton({index=9, label=new})
+    else
+      card = obj.getButtons()
+      current = tonumber(card[10]["label"])
+      new = tostring(current - 1)
+      obj.editButton({index=9, label=new})
+    end
+end
+
+function PotionValue(obj, color, alt_click)
+    if alt_click == false then
+      card = obj.getButtons()
+      current = tonumber(card[12]["label"])
+      new = tostring(current + 1)
+      obj.editButton({index=11, label=new})
+    else
+      card = obj.getButtons()
+      current = tonumber(card[12]["label"])
+      new = tostring(current - 1)
+      obj.editButton({index=11, label=new})
+    end
+end
+
+function LStoneValue(obj, color, alt_click)
+    if alt_click == false then
+      card = obj.getButtons()
+      current = tonumber(card[14]["label"])
+      new = tostring(current + 1)
+      obj.editButton({index=13, label=new})
+    else
+      card = obj.getButtons()
+      current = tonumber(card[14]["label"])
+      new = tostring(current - 1)
+      obj.editButton({index=13, label=new})
+    end
+end
+
+function HElixirValue(obj, color, alt_click)
+    if alt_click == false then
+      card = obj.getButtons()
+      current = tonumber(card[16]["label"])
+      new = tostring(current + 1)
+      obj.editButton({index=15, label=new})
+    else
+      card = obj.getButtons()
+      current = tonumber(card[16]["label"])
+      new = tostring(current - 1)
+      obj.editButton({index=15, label=new})
+    end
+end
+
+function CampGValue(obj, color, alt_click)
+      card = obj.getButtons()
+      current = card[18]["label"]
+      if current == "X" then
+          obj.editButton({index=17, label=""})
+      else
+          obj.editButton({index=17, label="X"})
+      end
+end
+
+function ClimbGValue(obj, color, alt_click)
+      card = obj.getButtons()
+      current = card[20]["label"]
+      if current == "X" then
+          obj.editButton({index=19, label=""})
+      else
+          obj.editButton({index=19, label="X"})
+      end
+end
+
+function FBoatValue(obj, color, alt_click)
+      card = obj.getButtons()
+      current = card[22]["label"]
+      if current == "X" then
+          obj.editButton({index=21, label=""})
+      else
+          obj.editButton({index=21, label="X"})
+      end
+end
+
+function RMountValue(obj, color, alt_click)
+      card = obj.getButtons()
+      current = card[24]["label"]
+      if current == "X" then
+          obj.editButton({index=23, label=""})
+      else
+          obj.editButton({index=23, label="X"})
+      end
+end
+
+function MaxEnergyValue(obj, color, alt_click)
+    if alt_click == false then
+      card = obj.getButtons()
+      current = tonumber(card[25]["label"])
+      new = tostring(current + 1)
+      obj.editButton({index=24, label=new})
+    else
+      card = obj.getButtons()
+      current = tonumber(card[25]["label"])
+      new = tostring(current - 1)
+      obj.editButton({index=24, label=new})
+    end
+end
+
+function MaxHealthValue(obj, color, alt_click)
+    if alt_click == false then
+      card = obj.getButtons()
+      current = tonumber(card[26]["label"])
+      new = tostring(current + 1)
+      obj.editButton({index=25, label=new})
+    else
+      card = obj.getButtons()
+      current = tonumber(card[26]["label"])
+      new = tostring(current - 1)
+      obj.editButton({index=25, label=new})
+    end
+end
+
+function CurrentEnergyValue(obj, color, alt_click)
+    if alt_click == false then
+      card = obj.getButtons()
+      current = tonumber(card[27]["label"])
+      new = tostring(current + 1)
+      obj.editButton({index=26, label=new})
+    else
+      card = obj.getButtons()
+      current = tonumber(card[27]["label"])
+      new = tostring(current - 1)
+      obj.editButton({index=26, label=new})
+    end
+end
+
+function CurrentHealthValue(obj, color, alt_click)
+    if alt_click == false then
+      card = obj.getButtons()
+      current = tonumber(card[28]["label"])
+      new = tostring(current + 1)
+      obj.editButton({index=27, label=new})
+    else
+      card = obj.getButtons()
+      current = tonumber(card[28]["label"])
+      new = tostring(current - 1)
+      obj.editButton({index=27, label=new})
+    end
+end
+
+function EnergyRegenValue(obj, color, alt_click)
+    if alt_click == false then
+      card = obj.getButtons()
+      current = tonumber(card[29]["label"])
+      new = tostring(current + 1)
+      obj.editButton({index=28, label=new})
+    else
+      card = obj.getButtons()
+      current = tonumber(card[29]["label"])
+      new = tostring(current - 1)
+      obj.editButton({index=28, label=new})
+    end
+end
+
+function HealthRegenValue(obj, color, alt_click)
+    if alt_click == false then
+      card = obj.getButtons()
+      current = tonumber(card[30]["label"])
+      new = tostring(current + 1)
+      obj.editButton({index=29, label=new})
+    else
+      card = obj.getButtons()
+      current = tonumber(card[30]["label"])
+      new = tostring(current - 1)
+      obj.editButton({index=29, label=new})
+    end
+end
+
+function NameValue() end
