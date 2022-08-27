@@ -1,0 +1,63 @@
+--[[ Lua code. See documentation: http://berserk-games.com/knowledgebase/scripting/ --]]
+
+--[[ The onLoad event is called after the game save finishes loading. --]]
+function onLoad()
+    --[[ print('onLoad!') --]]
+    MINIMUM_VALUE = 0
+    card = getObjectFromGUID("04f6f8")
+    params = {
+        click_function="AttackValue",
+        function_owner=self,
+        label="0",
+        position={-.88, 2, -.73},
+        width=60,
+        height=60,
+        font_color={0, 0, 0},
+        color={1,1,1}
+    }
+    card.createButton(params)
+    params = {
+        click_function="DefenseValue",
+        function_owner=self,
+        label="0",
+        position={-.88, 2, -.22},
+        width=60,
+        height=60,
+        font_color={0, 0, 0},
+        color={1,1,1}
+    }
+    card.createButton(params)
+end
+
+--[[ The onUpdate event is called once per frame. --]]
+function onUpdate ()
+    --[[ print('onUpdate loop!') --]]
+end
+
+function AttackValue(obj, color, alt_click)
+    if alt_click == false then
+      card = obj.getButtons()
+      current = tonumber(card[1]["label"])
+      new = tostring(current + 1)
+      obj.editButton({index=0, label=new})
+    else
+      card = obj.getButtons()
+      current = tonumber(card[1]["label"])
+      new = tostring(current - 1)
+      obj.editButton({index=0, label=new})
+    end
+end
+
+function DefenseValue(obj, color, alt_click)
+    if alt_click == false then
+      card = obj.getButtons()
+      current = tonumber(card[2]["label"])
+      new = tostring(current + 1)
+      obj.editButton({index=1, label=new})
+    else
+      card = obj.getButtons()
+      current = tonumber(card[2]["label"])
+      new = tostring(current - 1)
+      obj.editButton({index=1, label=new})
+    end
+end
