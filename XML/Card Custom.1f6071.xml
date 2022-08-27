@@ -1,0 +1,839 @@
+<button
+    id="attackIncrement"
+    onclick="Increment"
+    position="115 -85 -30"
+    width="20"
+    height="20"
+    textColor="#000000"
+    color="#ce1b1f"
+    >
++
+</button>
+
+<button
+    id="attackDecrement"
+    onclick="Decrement"
+    position="115 -65 -30"
+    width="20"
+    height="20"
+    textColor="#000000"
+	    color="#ce1b1f"
+    >
+-
+</button>
+
+<button
+	  id="defenseIncrement"
+    onclick="Increment"
+    position="115 -35 -30"
+    width="20"
+    height="20"
+    textColor="#000000"
+    color="#db7110"
+    >
++
+</button>
+
+<button
+    	id="defenseDecrement"
+    onclick="Decrement"
+    position="115 -15 -30"
+    width="20"
+    height="20"
+    textColor="#000000"
+    color="#db7110"
+    >
+-
+</button>
+
+<button
+	    id="firstMasteryIncrement"
+    onclick="Increment"
+    position="115 15 -30"
+    width="20"
+    height="20"
+    textColor="#000000"
+	color="#571d70"
+    >
++
+</button>
+
+<button
+	    id="firstMasteryDecrement"
+    onclick="Decrement"
+    position="115 35 -30"
+    width="20"
+    height="20"
+    textColor="#000000"
+	color="#571d70"
+    >
+-
+</button>
+
+<button
+	    id="secondMasteryIncrement"
+    onclick="Increment"
+    position="115 65 -30"
+    width="20"
+    height="20"
+    textColor="#000000"
+	color="#163c80"
+    >
++
+</button>
+
+<button
+    	id="secondMasteryDecrement"
+    onclick="Decrement"
+    position="115 85 -30"
+    width="20"
+    height="20"
+    textColor="#000000"
+	color="#163c80"
+    >
+-
+</button>
+
+<button
+    id="navigateIncrement"
+    onclick="Increment"
+    position="100 165 -30"
+    width="20"
+    height="20"
+    textColor="#000000"
+	color="#69a01f"
+    >
++
+</button>
+
+<button
+    id="navigateDecrement"
+    onclick="Decrement"
+    position="82 165 -30"
+    width="20"
+    height="20"
+    textColor="#000000"
+	color="#69a01f"
+    >
+-
+</button>
+
+<button
+    id="exploreIncrement"
+    onclick="Increment"
+    position="64 165 -30"
+    width="20"
+    height="20"
+    textColor="#000000"
+	color="#eacf01"
+    >
++
+</button>
+
+<button
+    id="exploreDecrement"
+    onclick="Decrement"
+    position="46 165 -30"
+    width="20"
+    height="20"
+    textColor="#000000"
+	color="#eacf01"
+    >
+-
+</button>
+
+<button
+    id="survivalIncrement"
+    onclick="Increment"
+    position="28 165 -30"
+    width="20"
+    height="20"
+    textColor="#000000"
+	color="#33a3be"
+    >
++
+</button>
+
+<button
+    id="survivalDecrement"
+    onclick="Decrement"
+    position="10 165 -30"
+    width="20"
+    height="20"
+    textColor="#000000"
+	color="#33a3be"
+    >
+-
+</button>
+
+<button
+    id="foodRatingIncrement"
+    onclick="Increment"
+    position="-10 165 -30"
+    width="20"
+    height="20"
+    textColor="#000000"
+    >
++
+</button>
+
+<button
+    id="foodRatingDecrement"
+    onclick="Decrement"
+    position="-28 165 -30"
+    width="20"
+    height="20"
+    textColor="#000000"
+    >
+-
+</button>
+
+<button
+    id="foodIncrement"
+    onclick="Increment"
+    position="-46 165 -30"
+    width="20"
+    height="20"
+    textColor="#000000"
+	color="#61695e"
+    >
++
+</button>
+
+<button
+    id="foodDecrement"
+    onclick="Decrement"
+    position="-64 165 -30"
+    width="20"
+    height="20"
+    textColor="#000000"
+	color="#61695e"
+    >
+-
+</button>
+
+<button
+    id="goldIncrement"
+    onclick="Increment"
+    position="-82 165 -30"
+    width="20"
+    height="20"
+    textColor="#000000"
+	color="#b68d34"
+    >
++
+</button>
+
+<button
+    id="goldDecrement"
+    onclick="Decrement"
+    position="-100 165 -30"
+    width="20"
+    height="20"
+    textColor="#000000"
+	color="#b68d34"
+    >
+-
+</button>
+
+<button
+    id="totalHealthIncrement"
+    onclick="Increment"
+    position="-41 -205 -30"
+    width="20"
+    height="20"
+    textColor="#fefefe"
+    color="#100f0c"
+    >
++
+</button>
+
+<button
+    id="totalHealthDecrement"
+    onclick="Decrement"
+    position="-59 -205 -30"
+    width="20"
+    height="20"
+    textColor="#fefefe"
+	color="#100f0c"
+    >
+-
+</button>
+
+<button
+    id="currentHealthIncrement"
+    onclick="Increment"
+    position="-41 -185 -30"
+    width="20"
+    height="20"
+    textColor="#fefefe"
+    color="#373329"
+    >
++
+</button>
+
+<button
+    id="currentHealthDecrement"
+    onclick="Decrement"
+    position="-59 -185 -30"
+    width="20"
+    height="20"
+    textColor="#fefefe"
+	color="#373329"
+    >
+-
+</button>
+
+<button
+    id="healthRegenIncrement"
+    onclick="Increment"
+    position="-41 -165 -30"
+    width="20"
+    height="20"
+    textColor="#fefefe"
+    color="#605a48"
+    >
++
+</button>
+
+<button
+    id="healthRegenDecrement"
+    onclick="Decrement"
+    position="-59 -165 -30"
+    width="20"
+    height="20"
+    textColor="#fefefe"
+	color="#605a48"
+    >
+-
+</button>
+
+<button
+    id="totalEnergyIncrement"
+    onclick="Increment"
+    position="-77 -205 -30"
+    width="20"
+    height="20"
+    textColor="#000000"
+	color="#93928c"
+    >
++
+</button>
+
+<button
+    id="totalEnergyDecrement"
+    onclick="Decrement"
+    position="-95 -205 -30"
+    width="20"
+    height="20"
+    textColor="#000000"
+	color="#93928c"
+    >
+-
+</button>
+
+<button
+    id="currentEnergyIncrement"
+    onclick="Increment"
+    position="-77 -185 -30"
+    width="20"
+    height="20"
+    textColor="#000000"
+	color="#cacac7"
+    >
++
+</button>
+
+<button
+    id="currentEnergyDecrement"
+    onclick="Decrement"
+    position="-95 -185 -30"
+    width="20"
+    height="20"
+    textColor="#000000"
+	color="#cacac7"
+    >
+-
+</button>
+
+<button
+    id="energyRegenIncrement"
+    onclick="Increment"
+    position="-77 -165 -30"
+    width="20"
+    height="20"
+    textColor="#000000"
+	color="#dcdcda"
+    >
++
+</button>
+
+<button
+    id="energyRegenDecrement"
+    onclick="Decrement"
+    position="-95 -165 -30"
+    width="20"
+    height="20"
+    textColor="#000000"
+	color="#dcdcda"
+    >
+-
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Back Pack Items-->
+<!--Item 1-->
+<text
+    position="-62 -23 -30"
+    width="45"
+    height="30"
+    rotation="0 0 180"
+    fontSize="10"
+    fontStyle="Bold"
+    >
+Potion
+</text>
+
+<text
+    position="-93 -23 -30"
+    width="45"
+    height="30"
+
+
+    rotation="0 0 180"
+    fontSize="10"
+    fontStyle="Bold"
+    >
+0
+</text>
+
+<button
+    id="backpackItemOneIncrement"
+    onclick="Increment"
+    position="-115 -28 -30"
+    width="20"
+    height="15"
+    textColor="#000000"
+    fontSize="13"
+    >
++
+</button>
+
+<button
+    id="backpackItemOneDecrement"
+    onclick="Decrement"
+    position="-133 -28 -30"
+    width="20"
+    height="15"
+    textColor="#000000"
+	fontSize="13"
+    >
+-
+</button>
+
+
+<!--Item 2-->
+<text
+    position="-65 -8 -30"
+    width="45"
+    height="30"
+    rotation="0 0 180"
+    fontSize="10"
+    fontStyle="Bold"
+    >
+L Stone
+</text>
+
+<text
+    position="-93 -8 -30"
+    width="40"
+    height="30"
+
+
+    rotation="0 0 180"
+    fontSize="10"
+    fontStyle="Bold"
+    >
+0
+</text>
+
+<button
+    id="backpackItemTwoIncrement"
+    onclick="Increment"
+    position="-115 -14 -30"
+    width="20"
+    height="15"
+    textColor="#000000"
+	fontSize="13"
+    >
++
+</button>
+
+<button
+    id="backpackItemTwoDecrement"
+    onclick="Decrement"
+    position="-133 -14 -30"
+    width="20"
+    height="15"
+    textColor="#000000"
+	fontSize="13"
+    >
+-
+</button>
+
+<!--Item 3-->
+<text
+    position="-64 5 -30"
+    width="45"
+    height="30"
+    rotation="0 0 180"
+    fontSize="10"
+    fontStyle="Bold"
+    >
+H Elixir
+</text>
+
+<text
+    position="-93 5 -30"
+    width="40"
+    height="30"
+
+
+    rotation="0 0 180"
+    fontSize="10"
+    fontStyle="Bold"
+    >
+0
+</text>
+
+<button
+    id="backpackItemThreeIncrement"
+    onclick="Increment"
+    position="-115 1 -30"
+    width="20"
+    height="15"
+    textColor="#000000"
+	fontSize="13"
+    >
++
+</button>
+
+<button
+    id="backpackItemThreeDecrement"
+    onclick="Decrement"
+    position="-133 1 -30"
+    width="20"
+    height="15"
+    textColor="#000000"
+	fontSize="13"
+    >
+-
+</button>
+
+<!--Item 4-->
+<text
+    position="-66 21 -30"
+    width="50"
+    height="30"
+    rotation="0 0 180"
+    fontSize="10"
+    fontStyle="Bold"
+    >
+Camp G
+</text>
+
+<toggle
+    position="-115 21 -30"
+    toggleWidth="15"
+    toggleHeight="15"
+    rotation="0 0 180"
+    >
+</toggle>
+
+<!--Item 5-->
+<text
+    position="-66 36 -30"
+    width="50"
+    height="30"
+    rotation="0 0 180"
+    fontSize="10"
+    fontStyle="Bold"
+    >
+Climb G
+</text>
+
+<toggle
+    position="-115 36 -30"
+    toggleWidth="15"
+    toggleHeight="15"
+    rotation="0 0 180"
+    >
+</toggle>
+
+<!--Item 6-->
+<text
+    position="-62 51 -30"
+    width="48"
+    height="30"
+    rotation="0 0 180"
+    fontSize="10"
+    fontStyle="Bold"
+    >
+F Boat
+</text>
+
+<toggle
+    position="-115 51 -30"
+    toggleWidth="15"
+    toggleHeight="15"
+    rotation="0 0 180"
+    >
+</toggle>
+
+<!--Item 7-->
+<text
+    position="-66 66 -30"
+    width="50"
+    height="30"
+    rotation="0 0 180"
+    fontSize="10"
+    fontStyle="Bold"
+    >
+R Mount
+</text>
+
+<toggle
+    position="-115 66 -30"
+    toggleWidth="15"
+    toggleHeight="15"
+    rotation="0 0 180"
+    >
+</toggle>
+
+<!--Ability Values-->
+<text
+    id="strikeValue"
+    position="86 -73 -30"
+    width="40"
+    height="40"
+    rotation="0 0 180"
+    fontSize="21"
+    fontStyle="Bold"
+    >
+0
+</text>
+
+<text
+    id="defenseValue"
+    position="86 -23 -30"
+    width="40"
+    height="40"
+    rotation="0 0 180"
+    fontSize="21"
+    fontStyle="Bold"
+    >
+0
+</text>
+
+<text
+    id="firstMasteryValue"
+    position="86 30 -30"
+    width="40"
+    height="40"
+    rotation="0 0 180"
+    fontSize="21"
+    fontStyle="Bold"
+    >
+0
+</text>
+
+<text
+    id="secondMasteryValue"
+    position="86 80 -30"
+    width="40"
+    height="40"
+    rotation="0 0 180"
+    fontSize="21"
+    fontStyle="Bold"
+    >
+0
+</text>
+
+<!--Skills Values-->
+<text
+    id="navigateValue"
+    position="57 108 -30"
+    width="40"
+    height="40"
+    rotation="0 0 180"
+    fontSize="21"
+    fontStyle="Bold"
+    >
+0
+</text>
+
+<text
+    id="exploreValue"
+    position="31 108 -30"
+    width="40"
+    height="40"
+    rotation="0 0 180"
+    fontSize="21"
+    fontStyle="Bold"
+    >
+0
+</text>
+
+<text
+    id="survivalValue"
+    position="5 108 -30"
+    width="40"
+    height="40"
+    rotation="0 0 180"
+    fontSize="21"
+    fontStyle="Bold"
+    >
+0
+</text>
+
+<!--Vitals Values-->
+<text
+    id="totalHealthValue"
+    position="-58 -105 -30"
+    width="40"
+    height="40"
+    rotation="0 0 180"
+    fontSize="21"
+    fontStyle="Bold"
+    >
+0
+</text>
+
+<text
+    id="currentHealthValue"
+    position="-78 -95 -30"
+    width="40"
+    height="40"
+    rotation="0 0 180"
+    fontSize="21"
+    fontStyle="Bold"
+    >
+0
+</text>
+
+<text
+    id="healthRegenValue"
+    position="-92 -96 -30"
+    width="40"
+    height="40"
+    rotation="0 0 180"
+    fontSize="21"
+    fontStyle="Bold"
+    >
+0
+</text>
+
+<text
+    id="totalEnergyValue"
+    position="-58 -58 -30"
+    width="40"
+    height="40"
+    rotation="0 0 180"
+    fontSize="21"
+    fontStyle="Bold"
+    >
+0
+</text>
+
+<text
+    id="currentEnergyValue"
+    position="-78 -63 -30"
+    width="40"
+    height="40"
+    rotation="0 0 180"
+    fontSize="21"
+    fontStyle="Bold"
+    >
+0
+</text>
+
+<text
+    id="energyRegenValue"
+    position="-92 -64 -30"
+    width="40"
+    height="40"
+    rotation="0 0 180"
+    fontSize="21"
+    fontStyle="Bold"
+    >
+0
+</text>
+
+<!--Food/Gold Values-->
+<text
+    id="foodValue"
+    position="-77 104 -30"
+    width="40"
+    height="40"
+    rotation="0 0 180"
+    fontSize="21"
+    fontStyle="Bold"
+    >
+0
+</text>
+
+<text
+    id="goldValue"
+    position="-93 95 -30"
+    width="40"
+    height="40"
+    rotation="0 0 180"
+    fontSize="21"
+    fontStyle="Bold"
+    >
+0
+</text>
+
+<text
+    id="foodRatingValue"
+    position="-24 125 -30"
+    width="40"
+    height="40"
+    rotation="0 0 180"
+    fontSize="21"
+    fontStyle="Bold"
+    >
+0
+</text>
+
+<text
+    id="foodRatingBarValue"
+    position="-32 119 -30"
+    width="40"
+    height="40"
+    rotation="0 0 180"
+    fontSize="21"
+    fontStyle="Bold"
+    >
+|
+</text>

@@ -1,0 +1,59 @@
+--[[ Lua code. See documentation: http://berserk-games.com/knowledgebase/scripting/ --]]
+
+--[[ The onLoad event is called after the game save finishes loading. --]]
+function onLoad()
+    --[[ print('onLoad!') --]]
+    MINIMUM_VALUE = 0
+    card = getObjectFromGUID("04f6f8")
+    card.createButton(params)
+    params = {
+        click_function="AttackValue",
+        function_owner=self,
+        label="0",
+        position={-.88, 2, -.73},
+        width=60,
+        height=60,
+        font_color={0, 0, 0},
+        color={1,1,1}
+    }
+    card.createButton(params)
+end
+
+--[[ The onUpdate event is called once per frame. --]]
+function onUpdate ()
+    --[[ print('onUpdate loop!') --]]
+end
+
+function AttackValue(obj, color, alt_click)
+    if alt_click == false then
+      card = obj.getButtons()
+      current = tonumber(card[1]["label"])
+      new = tostring(current + 1)
+      obj.editButton({index=0, label=new})
+    else
+      card = obj.getButtons()
+      current = tonumber(card[1]["label"])
+      new = tostring(current - 1)
+      obj.editButton({index=0, label=new})
+    end
+
+    --size = 0
+    --size2 = 0
+    --for _ in pairs(card) do size = size + 1 end
+      --for _ in pairs(card[1]) do size2 = size2 + 1 end
+      --print(size)
+      --print(size2)
+    --obj.editButton({index=1, label="1"})
+    --for i in pairs(card[1]) do
+      --print("current loop: ", i , card[1][i])
+      --if i == 9 then
+        --number = tonumber(card[1][i]) + 10
+        --number = tostring(number)
+        --print("result of attempted increment:", number)
+      --end
+
+    --end
+    --print(card[3]["label"])
+
+
+end

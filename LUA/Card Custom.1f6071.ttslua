@@ -1,0 +1,15 @@
+function Increment()
+    --card = getObjectFromGUID("04f6f8")
+    --params = {
+    --    click_function="Increment",
+    --    function_owner=self,
+    --    label="+",
+    --    position={115, -85, -30},
+    --    width=20,
+    --    height=20,
+    --    font_color={0, 0, 0},
+    --    color={206,27,31},
+    --}
+    --card.createButton(params)
+    this.getGUID() 
+end
